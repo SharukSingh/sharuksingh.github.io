@@ -1,0 +1,12 @@
+@font-face {
+	font-family: badaboom;
+	src: url(../fonts/badabb.ttf);
+}
+
+h1 {
+	font-family: badaboom; 
+	font-weight: normal; 
+	color: skyblue; 
+	letter-spacing: 2px; 
+	font-size: 72px;
+}
