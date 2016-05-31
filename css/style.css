@@ -1,3 +1,7 @@
+body {
+	background-color: #66BB6A;
+}
+
 @font-face {
 	font-family: badaboom;
 	src: url(../fonts/badabb.TTF);
@@ -6,7 +10,8 @@
 h1 {
 	font-family: badaboom; 
 	font-weight: normal; 
-	color: skyblue; 
+	color: #ffff00; 
 	letter-spacing: 2px; 
 	font-size: 72px;
+	text-shadow: 2px 2px #ff0000;
 }
