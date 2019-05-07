@@ -7,6 +7,16 @@ body {
 	color: #fff;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: inherit;
+}
+
 @font-face {
 	font-family: badaboom;
 	src: url(../fonts/badabb.TTF);
