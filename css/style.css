@@ -1,41 +1,36 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-	background: rgb(5,12,20);
-	background: -moz-linear-gradient(90deg, rgba(5,12,20,1) 0%, rgba(23,30,58,1) 50%, rgba(5,12,20,1) 100%);
-	background: -webkit-linear-gradient(90deg, rgba(5,12,20,1) 0%, rgba(23,30,58,1) 50%, rgba(5,12,20,1) 100%);
-	background: linear-gradient(90deg, rgba(5,12,20,1) 0%, rgba(23,30,58,1) 50%, rgba(5,12,20,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#050c14",endColorstr="#050c14",GradientType=1);
-	color: #fff;
+  background: #fff;
+  font-family: "Avenir";
+  color: #0b0b0b;
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
-	text-decoration: underline;
-	color: inherit;
-}
-
-@font-face {
-	font-family: badaboom;
-	src: url(../fonts/badabb.TTF);
+  text-decoration: underline;
+  color: inherit;
 }
 
 h1 {
-	font-family: badaboom;
-	font-weight: normal;
-	color: #ffff00;
-	letter-spacing: 2px;
-	font-size: 72px;
-	text-shadow: 2px 2px #ff0000;
+  font-family: "Style Script";
+  font-weight: normal;
+  color: #0b0b0b;
+  font-size: 96px;
+  /* text-shadow: 2px 2px #ff0000; */
 }
 
 h3 {
-	font-family: badaboom;
-	font-weight: normal;
-	color: #ffff00;
-	letter-spacing: 2px;
-	font-size: 32px;
-	text-shadow: 1px 1px #ff0000;
+  font-family: "Avenir";
+  font-weight: normal;
+  color: #0b0b0b;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 300;
 }

@@ -1,79 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139388271-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-139388271-1');
-    </script>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Sharuk - 3D artist</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Sharuk's Homepage</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
 
-    <!-- development version, includes helpful console warnings -->
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-</head>
-<body>
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                xfbml: true,
-                version: 'v6.0'
-            });
-        };
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <!-- Your customer chat code -->
-    <div class="fb-customerchat" attribution=setup_tool page_id="144948285551790" theme_color="#3d5dd6"></div>
+    <!-- tailwind -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
     <div id="app" class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1>Hello!</h1>
-                <!-- <h1>Welcome to Sharuk's Home Page</h1> -->
-                <h3>Please check back soon...</h3>
-            </div>
-
-            <div class="col-lg-12 text-center">
-                <h3><a href="" v-on:click.prevent="toggleStatus = !toggleStatus">Or you can leave your message here</a>
-                </h3>
-            </div>
-
-            <div v-if="toggleStatus" class="col-lg-12 ">
-                <form method="POST" action="https://formspree.io/sharuksingh@outlook.com">
-                    <div class="form-group">
-                        <label>Name</label>
-                        <input type="textbox" name="Name" class="form-control" placeholder="Enter your name here">
-                    </div>
-                    <div class="form-group">
-                        <label>Email address</label>
-                        <input type="email" name="Email" class="form-control" placeholder="Enter your email here">
-                    </div>
-                    <div class="form-group">
-                        <label>Message</label>
-                        <textarea class="form-control" name="Message" placeholder="Leave your message here"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-            </div>
+      <div class="row">
+        <div class="flex flex-row w-100 p-3">
+          <div class="mr-auto">
+            <a href="/">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.306 1.10698C8.21728 1.03781 8.108 1.00024 7.9955 1.00024C7.883 1.00024 7.77372 1.03781 7.685 1.10698L0.5 6.70948L1.1215 7.49548L2 6.81048V13C2.00053 13.265 2.10606 13.5191 2.29348 13.7065C2.4809 13.8939 2.73495 13.9995 3 14H13C13.2651 13.9995 13.5191 13.8939 13.7065 13.7065C13.8939 13.5191 13.9995 13.265 14 13V6.81498L14.8785 7.49998L15.5 6.71398L8.306 1.10698ZM9 13H7V8.99998H9V13ZM10 13V8.99998C10 8.73476 9.89464 8.48041 9.70711 8.29287C9.51957 8.10534 9.26522 7.99998 9 7.99998H7C6.73478 7.99998 6.48043 8.10534 6.29289 8.29287C6.10536 8.48041 6 8.73476 6 8.99998V13H3V6.03098L8 2.13598L13 6.03598V13H10Z"
+                  fill="#0B0B0B"
+                />
+              </svg>
+            </a>
+          </div>
+          <div>
+            <a class="ml-10" href="#about">About</a>
+            <a class="ml-10" href="#works">Works</a>
+            <a class="ml-10" href="#contact">Contact</a>
+          </div>
         </div>
+
+        <!-- header -->
+        <div class="col-lg-12 text-center mt-24">
+          <h1>Sharuk Singh</h1>
+          <h3 class="mt-2">3D Artist</h3>
+
+          <img
+            src="/images/audi r8.png"
+            alt="3D model of Audi R8"
+            class="mt-24"
+          />
+        </div>
+
+        <!-- About -->
+        <div class="col-lg-12 text-center mt-2 pt-8" id="about">
+          <p class="text-left">
+            Hi, I'm Sharuk a passionate 3D artist with an eye for detail and
+            innovative design. I specialize in creating visually captivating 3D
+            models and animations. Drawing inspiration from both nature and
+            technology, I strive to bring imagination to life through my work.
+            As I embark on my artistic journey, I am eager to collaborate and
+            contribute my unique perspective to creative projects. My work
+            reflects my commitment to learning and expanding my skills in this
+            dynamic field. Let's create something extraordinary together!
+          </p>
+        </div>
+
+        <!-- works -->
+        <div class="col-lg-12 mt-16 pt-8" id="works">
+          <h3>Works</h3>
+
+          <div class="flex flex-row gap-4 mt-8">
+            <div class="w-1/2 h-112">
+              <img
+                src="/images/cannon_render.png"
+                alt="3D model of Cannon"
+                class="w-full h-full object-cover"
+              />
+              <p class="mt-2">
+                Modeled and textured a Cannon in Maya and Substance painter,
+                rendered in Arnold
+              </p>
+            </div>
+
+            <div class="w-1/2 h-112">
+              <img
+                src="/images/cannon_wireframe.png"
+                alt="Wireframed"
+                class="w-full h-full object-cover"
+              />
+              <p class="mt-2">Showing the wireframe of the cannon</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12 mt-16" id="works">
+          <div class="mt-8">
+            <p>Adding more soon</p>
+          </div>
+        </div>
+
+        <!-- contact -->
+        <div class="col-lg-12 mt-32 mb-24 pb-8" id="contact">
+          <h3>Contact</h3>
+
+          <form
+            method="POST"
+            action="https://formspree.io/sharuksingh@outlook.com"
+            class="mt-8 w-50"
+          >
+            <div class="form-group">
+              <label>Name</label>
+              <input
+                type="textbox"
+                name="Name"
+                class="form-control"
+                placeholder="Enter your name here"
+              />
+            </div>
+            <div class="form-group">
+              <label>Email address</label>
+              <input
+                type="email"
+                name="Email"
+                class="form-control"
+                placeholder="Enter your email here"
+              />
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea
+                class="form-control"
+                name="Message"
+                placeholder="Leave your message here"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+
+        <!-- footer -->
+        <div class="col-lg-12 text-center">
+          <p>&copy; 2025 Sharuk Singh. All rights reserved.</p>
+        </div>
+      </div>
     </div>
-    <script type="text/javascript" src="./js/vue.js"></script>
-</body>
+  </body>
 </html>
